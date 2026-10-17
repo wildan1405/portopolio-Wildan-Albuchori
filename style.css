@@ -1,0 +1,342 @@
+
+/* ========================================
+   STYLE PORTOFOLIO WILDAN ALBUCHORI
+   ======================================== */
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PENGATURAN BODY */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #e0e7ff, #f3e8ff);
+    color: #1e293b;
+    line-height: 1.8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ========================================
+   NAVBAR
+   ======================================== */
+
+.navbar {
+    background: rgba(15, 23, 42, 0.97);
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar h2 {
+    font-size: 23px;
+    color: #60a5fa;
+    letter-spacing: 1px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    color: #e2e8f0;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background: #2563eb;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* ========================================
+   KONTEN UTAMA
+   ======================================== */
+
+main {
+    width: 100%;
+    max-width: 1100px;
+    margin: 45px auto;
+    padding: 0 25px;
+    flex: 1;
+}
+
+/* ========================================
+   CARD
+   ======================================== */
+
+.card {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(30, 41, 59, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 15px 40px rgba(30, 41, 59, 0.17);
+}
+
+/* ========================================
+   JUDUL
+   ======================================== */
+
+.card h1 {
+    color: #1d4ed8;
+    font-size: 32px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #93c5fd;
+}
+
+.card h2 {
+    color: #334155;
+    font-size: 23px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+/* TEKS BERWARNA */
+.biru {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.merah {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+/* ========================================
+   FOTO PROFIL
+   ======================================== */
+
+.foto-profil {
+    display: block;
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 25px auto;
+    border: 6px solid #bfdbfe;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.foto-profil:hover {
+    transform: scale(1.05);
+}
+
+/* ========================================
+   VIDEO PROFIL
+   ======================================== */
+
+.video-profil {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    margin: 20px auto;
+    border-radius: 14px;
+    background: #0f172a;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ========================================
+   DAFTAR KEAHLIAN DAN PENDIDIKAN
+   ======================================== */
+
+.card ul,
+.card ol {
+    padding-left: 30px;
+    margin: 15px 0 25px;
+}
+
+.card li {
+    padding: 8px 0;
+}
+
+.card ul li::marker {
+    color: #2563eb;
+}
+
+.card ol li::marker {
+    color: #1d4ed8;
+    font-weight: bold;
+}
+
+/* ========================================
+   TABEL PENDIDIKAN
+   ======================================== */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.tabel-pendidikan {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.tabel-pendidikan th {
+    background: #1e40af;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.tabel-pendidikan td {
+    padding: 13px 15px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.tabel-pendidikan tbody tr:nth-child(even) {
+    background: #eff6ff;
+}
+
+.tabel-pendidikan tbody tr:hover {
+    background: #dbeafe;
+    transition: 0.2s ease;
+}
+
+/* ========================================
+   INFORMASI KONTAK
+   ======================================== */
+
+.card a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: #1e40af;
+    text-decoration: underline;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+
+footer {
+    background: #0f172a;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    border-top: 4px solid #3b82f6;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* ========================================
+   RESPONSIVE UNTUK TABLET DAN HP
+   ======================================== */
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 18px 15px;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .navbar ul li a {
+        padding: 7px 10px;
+        font-size: 14px;
+    }
+
+    main {
+        margin: 25px auto;
+        padding: 0 15px;
+    }
+
+    .card {
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+    .card h1 {
+        font-size: 26px;
+    }
+
+    .card h2 {
+        font-size: 21px;
+    }
+
+    .foto-profil {
+        width: 155px;
+        height: 155px;
+    }
+
+    .tabel-pendidikan {
+        font-size: 13px;
+    }
+
+    .tabel-pendidikan th,
+    .tabel-pendidikan td {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .navbar h2 {
+        font-size: 20px;
+    }
+
+    .navbar ul {
+        gap: 2px;
+    }
+
+    .navbar ul li a {
+        padding: 6px 7px;
+        font-size: 12px;
+    }
+
+    .card {
+        padding: 20px 15px;
+    }
+
+    .card h1 {
+        font-size: 23px;
+    }
+}
